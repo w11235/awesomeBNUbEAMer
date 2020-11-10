@@ -1,0 +1,57 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Berkeley}
+\usecolortheme{seahorse}
+
+%Information to be included in the title page:
+\title{ A Great Title }
+\author{
+A Famous Author \inst{1} 
+\and Another Famous Author \inst{2} }
+\institute{
+\inst{1} 
+A Great Department \\
+Beijing Normal University
+\and 
+\inst{2}
+Another Great Department \\
+Beijing Normal University
+}
+\date{\today}
+
+% Design
+\logo{
+    \includegraphics[height=1.4cm]{design/BNU_logo.png}
+% \includegraphics[height=1cm]{path/to/file/moreicons.png}
+}
+
+\begin{document}
+\frame{\titlepage}
+
+% Table of Contents
+\AtBeginSection[] {
+    \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents
+    \end{frame}
+}
+
+\begin{frame}
+    \frametitle{Sample frame title}
+    This is a text in the first frame. This is a text in the first frame. This is a text in the first frame.
+    \begin{itemize}
+        \item item1
+        \item item2
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Sample frame title}
+    This is a text in the second frame. This is a text in the second frame. This is a text in the second frame.
+    \begin{itemize}
+        \item item3
+        \item item4
+    \end{itemize}
+\end{frame}
+
+\end{document}
