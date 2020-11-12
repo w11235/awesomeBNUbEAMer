@@ -13,3 +13,8 @@ Overleaf is a website where you can use the template online. [Click Here](https:
 
 LaTeX is an amazing typesetting system converting commands into stylished articles/books/slides and etc. 
 For more details in LaTeX usage, you may want to Google search `LaTex Tutorial`.
+
+## Join In
+
+Be free join in this project! All you need may be 15 mins only to get familiar with the LaTeX command system.
+We need your support for more decent slides!
