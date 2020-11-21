@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# awesomeBNUbEAMer
 
-You can use the [editor on GitHub](https://github.com/htlee6/awesomeBNUbEAMer/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The **awesomeBNUbEAMer** is an open project for creating tidy and clean BNU styled beamer templates. 
+Personally, I STRONGLY RECOMMEND guys major in *Science & Techs* to use LaTeX and beamer to produce your presentation slides.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+And GET RID OF POWERPOINT!
 
-### Markdown
+## How to Use
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### In Terminal
+Run this command in your terminal:
+```bash
+cd path/to/awesomeBNUbEAMer
+xelatex main.tex && biber main && xelatex main.tex && xelatex main.tex
 ```
+### Overleaf
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Overleaf is a website where you can use the template online. [Click Here](https://www.overleaf.com/latex/templates/beijing-normal-university-beamer/sdxybqgmngcv)
 
-### Jekyll Themes
+## LaTeX & Beamer
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/htlee6/awesomeBNUbEAMer/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+LaTeX is an amazing typesetting system converting commands into stylished articles/books/slides and etc. LaTeX is a typesetting system rather than a programming language, and sometimes the language may look weird.
 
-### Support or Contact
+For more details in LaTeX usage, you may want to Google search `LaTeX Tutorial`.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Beamer is a document class in LaTeX system. A lot of extensions could be built upon beamer.
+
+## Join In & Support
+
+Be free join in this project! All you need may be 15 mins only to get familiar with the LaTeX command system.
+
+We need your support for more decent slides!
+
+Contact: hauten.lee # mail.bnu.edu.cn (replace # with @)
