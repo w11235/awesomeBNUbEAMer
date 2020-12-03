@@ -1,12 +1,13 @@
 % Customize font size as you wish 
-\documentclass[11pt]{beamer} % Available font sizes are 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt.
+% Available font sizes are 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt. 
+%Another aspectration is 169
+\documentclass[11pt, aspectratio=43]{beamer} 
 % ********* DO NOT EDIT ********* %
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx} % for including graphics
 \usepackage{listings} % for including codes
-%\usepackage{subfigure} % for including subfigures in a figure
-%\usepackage{caption}
-%\usepackage{subcaption}
+\usepackage{subcaption} % for subfigure alignment
+
 \usepackage{multicol}
 \usepackage{lmodern}
 \usepackage{marvosym}
@@ -14,7 +15,7 @@
 \usepackage{lipsum}
 % ******************************* %
 
-% Bibliography Settings %
+% ***** Bibliography Settings ****** %
 % ------------- NOTE --------------- %
 %     Editing is not recommended     %
 % unless you know what you are doing %
@@ -37,6 +38,13 @@ maxcitenames=2
 %\usefonttheme[]{serif}
 
 % Defined Commands %
+
+% This resolves the bug from MacTeX 2018, works for me
+% If you find removing doesn't keep you from typesetting with success
+% Feel free to remove it
+\makeatletter
+\let\@@magyar@captionfix\relax
+\makeatother
 
 % *************************** %
 
@@ -160,6 +168,102 @@ Somewhere unknown in the universe
 
 \end{frame}
 
+% @origin https://tex.stackexchange.com/questions/337630/subfigure-alignment-in-beamer
+% @author @samcarter_is_at_topanswers.xyz
+\begin{frame}{Sub-figure Alignment With Text Aside}
+    \begin{columns}[T, onlytextwidth]
+        \begin{column}{0.25\textwidth}
+            Some content here.\\
+            Some content here.\\
+            Some content here. 
+        \end{column}
+        \begin{column}{0.65\textwidth}
+                \vskip-\baselineskip
+            \begin{figure}
+                \centering
+                \begin{subfigure}[t]{0.45\textwidth}
+                    \centering
+                    \includegraphics[width=\linewidth]{example-image}
+                    \caption{Two line long caption}
+                    \label{fig:sub1}
+                \end{subfigure}\hskip 1em%
+                \begin{subfigure}[t]{0.45\textwidth}
+                    \centering
+                    \includegraphics[width=\linewidth]{example-image}
+                    \caption{One line caption}
+                    \label{fig:sub2}
+                \end{subfigure}
+
+                \begin{subfigure}[t]{0.45\textwidth}
+                    \centering
+                    \includegraphics[width=\linewidth]{example-image}
+                    \caption{One line caption}
+                    \label{fig:sub1}
+                \end{subfigure}\hskip 1em%
+                \begin{subfigure}[t]{0.45\textwidth}
+                    \centering
+                    \includegraphics[width=\linewidth]{example-image}
+                    \caption{Two line long caption}
+                    \label{fig:sub2}
+                \end{subfigure}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Clean Subfigures}
+    
+    \begin{figure}
+        \centering
+        \begin{subfigure}[b]{.45\linewidth}
+            \includegraphics[width=0.75\linewidth]{example-image-a}
+            \caption{A mouse}\label{fig:mouse}
+        \end{subfigure}
+        
+        \begin{subfigure}[b]{.45\linewidth}
+            \includegraphics[width=0.75\linewidth]{example-image-b}
+            \caption{A gull}\label{fig:gull}
+        \end{subfigure}
+            \begin{subfigure}[b]{.45\linewidth}
+            \includegraphics[width=0.75\linewidth]{example-image-c}
+            \caption{A tiger}\label{fig:tiger}
+        \end{subfigure}
+        \caption{Picture of animals}
+        \label{fig:animals}
+    \end{figure}
+    
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Clean Subfigures: Custom Subfigure Numbering}
+
+    \begin{figure}
+        \centering
+        \begin{subfigure}[b]{.45\linewidth}
+            \includegraphics[width=0.75\linewidth]{example-image-a}
+            \setcounter{subfigure}{2} % edit the value in the second bracket
+            \caption{A mouse}\label{fig:mouse2}
+        \end{subfigure}
+
+        % You will need a blank line up there %
+        \begin{subfigure}[b]{.45\linewidth}
+            \includegraphics[width=0.75\linewidth]{example-image-b}
+            \setcounter{subfigure}{0}%
+            \caption{A gull}\label{fig:gull2}
+        \end{subfigure}
+        \begin{subfigure}[b]{.45\linewidth}
+            \includegraphics[width=0.75\linewidth]{example-image-c}
+            \caption{A tiger}\label{fig:tiger2}
+        \end{subfigure}
+        \caption{Picture of animals}
+        \label{fig:animals}
+    \end{figure}
+        
+
+\end{frame}
+
 \begin{frame}
     \frametitle{Multiple Image Insertion}
 
@@ -189,36 +293,6 @@ Somewhere unknown in the universe
     \end{columns}
 
 \end{frame}
-
-%******** does not work *********%
-% \begin{frame}
-%     \frametitle{An Alternative Approach}
-% 
-%     \begin{figure*}%加*的作用是跨栏（双栏和单栏latex的区别）
-%         \centering
-%         
-%         %每列占整个文档的文本宽度的0.2，每列两张图像，两列图像，这些可以自行设置
-%         \subfigure[the first subfigure]{
-%         \begin{minipage}[b]{0.2\textwidth}
-%         \includegraphics[width=\textwidth]{imgs/golden-trio.jpg} \\
-%         \includegraphics[width=\textwidth]{imgs/golden-trio.jpg}
-%         \end{minipage}
-%         }
-%         \subfigure[the second subfigure]{
-%         \begin{minipage}[b]{0.2\textwidth}
-%         \includegraphics[width=\textwidth]{imgs/golden-trio.jpg} \\
-%         \includegraphics[width=\textwidth]{imgs/golden-trio.jpg}
-%         \end{minipage}
-%         }
-%         \subfigure[the third subfigure]{
-%         \begin{minipage}[b]{0.2\textwidth}
-%         \includegraphics[width=\textwidth]{imgs/golden-trio.jpg} \\
-%         \includegraphics[width=\textwidth]{imgs/golden-trio.jpg}
-%         \end{minipage}
-%         }\caption{Figure caption}
-%         \end{figure*}
-% 
-% \end{frame}
 
 \section{Include Formulas}
 
