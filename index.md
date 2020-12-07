@@ -5,6 +5,12 @@ Personally, I STRONGLY RECOMMEND guys major in *Science & Techs* to use LaTeX an
 
 And GET RID OF POWERPOINT!
 
+## Preview
+| | |
+|:--:|:--:|
+|<img src="images/StartPage.png" width=500/>|<img src="images/TOC.png" width=500/>|
+|<img src="images/ListedItems.png" width=500/>|<img src="images/Figure.png" width=500/>|
+
 ## How to Use
 
 ### In Terminal
