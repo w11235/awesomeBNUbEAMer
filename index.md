@@ -6,10 +6,24 @@ Personally, I STRONGLY RECOMMEND guys major in *Science & Techs* to use LaTeX an
 And GET RID OF POWERPOINT!
 
 ## Preview
-| | |
-|:--:|:--:|
-|<img src="images/StartPage.png" width=500/>|<img src="images/TOC.png" width=500/>|
-|<img src="images/ListedItems.png" width=500/>|<img src="images/Figure.png" width=500/>|
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src="/images/StartPage.png" width="500/" style="max-width:100%;"></a></td>
+<td align="center"><img src="/images/TOC.png" width="500/" style="max-width:100%;"></a></td>
+</tr>
+<tr>
+<td align="center"><img src="/images/ListedItems.png" width="500/" style="max-width:100%;"></a></td>
+<td align="center"><img src="images/Figure.png" width="500/" style="max-width:100%;"></a></td>
+</tr>
+</tbody>
+</table>
 
 ## How to Use
 
