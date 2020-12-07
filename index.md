@@ -8,10 +8,7 @@ And GET RID OF POWERPOINT!
 ## Preview
 <table>
 <thead>
-<tr>
-<th align="center"></th>
-<th align="center"></th>
-</tr>
+
 </thead>
 <tbody>
 <tr>
