@@ -12,11 +12,11 @@ And GET RID OF POWERPOINT!
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="/images/StartPage.png" width="500/" style="max-width:100%;"></td>
-<td align="center"><img src="/images/TOC.png" width="500/" style="max-width:100%;"></td>
+<td align="center"><img src="images/StartPage.png" width="500/" style="max-width:100%;"></td>
+<td align="center"><img src="images/TOC.png" width="500/" style="max-width:100%;"></td>
 </tr>
 <tr>
-<td align="center"><img src="/images/ListedItems.png" width="500/" style="max-width:100%;"></td>
+<td align="center"><img src="images/ListedItems.png" width="500/" style="max-width:100%;"></td>
 <td align="center"><img src="images/Figure.png" width="500/" style="max-width:100%;"></td>
 </tr>
 </tbody>
