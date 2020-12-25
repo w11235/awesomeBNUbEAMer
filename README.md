@@ -1,3 +1,5 @@
+![GitHub All Releases](https://img.shields.io/github/downloads/lewdev/hw-gen/total)
+
 # awesomeBNUbEAMer
 
 The **awesomeBNUbEAMer** is an open project for creating tidy and clean BNU styled beamer templates. 
